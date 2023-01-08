@@ -28,7 +28,7 @@ function Products() {
                   alt=""
                   id={product._id}
                 />
-                <h3>{product.name}</h3>
+                <h3>{product.name.toUpperCase()}</h3>
                 <p>{product.description} this is a test site from crown </p>
                 <button className="btn " id={product._id}>
                   shop ${product.price}
