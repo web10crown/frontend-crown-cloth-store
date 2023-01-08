@@ -191,7 +191,7 @@ function Home() {
                                     {`${user.name.toUpperCase()}
                                           `}
                                 </h5>
-                                <p className="card-text">{user.description}</p>
+                                <p className="card-text">{user.description.slice(0,23)}...</p>
                                 <button
                                     className="btn btn-secondary w-100 "
                                     id={user._id}
