@@ -146,7 +146,7 @@ function Home() {
                                     id={product._id}
                                 />
                                 <h5 className="card-title">
-                                    {product.name.toUpperCase().slice(0, 11)}
+                                    {product.name.toUpperCase()}
                                 </h5>
                                 <p className="card-text">
                                     {product.description} this is an practice
