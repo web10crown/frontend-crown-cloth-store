@@ -63,7 +63,7 @@ function NewProduct() {
 		formData.append("productImage", Pimage);
 
 		const result = await axios.post(
-			"http://localhost:5000/newproduct",
+			"https://crown-cloth-store-api.onrender.com/newproduct",
 			formData,
 			{
 				headers: {
