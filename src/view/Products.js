@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 function Products() {
-  const imgUrl = "http://localhost:5000/images/";
+  const imgUrl = "https://crown-cloth-store-api.onrender.com/images/";
   const navigate = useNavigate();
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/")
+    fetch("https://crown-cloth-store-api.onrender.com/")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
