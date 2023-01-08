@@ -20,7 +20,7 @@ function Products() {
       <link href="/assets/css/Products.css" rel="stylesheet" type="text/css" />
       <div className="mcontainer">
         <div className="mcards">
-          {data.slice(0, 15).map((product) => {
+          {data.slice().reverse().slice(0, 15).map((product) => {
             return (
               <div className="mcard" key={product._id} onClick={productDetails}>
                 <img
