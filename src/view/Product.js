@@ -102,7 +102,7 @@ function Product() {
                                     <h3>
                                         {product.name
                                             .toUpperCase()
-                                            .slice(0, 11)}
+                                            }
                                     </h3>
                                     <p>
                                         {product.description} we dont sell
