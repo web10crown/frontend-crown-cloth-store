@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 function Product() {
-    const imgUrl = "http://localhost:5000/images/";
+    const imgUrl = "https://crown-cloth-store-api.onrender.com/images/";
     const [data, setData] = useState([]);
     const [pData, setProductData] = useState({
         _id: "63b6783f7b85ae0e7fde6e83",
@@ -19,7 +19,7 @@ function Product() {
     });
     const params = useParams();
     useEffect(() => {
-        fetch("http://localhost:5000/")
+        fetch("https://crown-cloth-store-api.onrender.com/")
             .then((res) => res.json())
             .then((data) => {
                 setData(data);
