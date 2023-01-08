@@ -72,7 +72,7 @@ function Products() {
         {data
           .slice(0, 12)
           .filter((p) => {
-            return p.clothType === "jacket";
+            return p.clothType.toLowerCase() === "jacket";
           })
           .map((p) => (
             <div className="gcontent" key={p._id} onClick={productDetails}>
@@ -85,7 +85,7 @@ function Products() {
         {data
           .slice(0, 12)
           .filter((p) => {
-            return p.clothType === "jeans";
+            return p.clothType.toLowerCase() === "jeans";
           })
           .map((p) => (
             <div className="gcontent" key={p._id} onClick={productDetails}>
@@ -98,7 +98,7 @@ function Products() {
         {data
           .slice(0, 12)
           .filter((p) => {
-            return p.clothType === "shirt";
+            return p.clothType.toLowerCase() === "shirt";
           })
           .map((p) => (
             <div className="gcontent" key={p._id} onClick={productDetails}>
