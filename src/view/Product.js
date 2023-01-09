@@ -85,7 +85,7 @@ function Product() {
                     {data
                         .slice(0, 15)
                         .filter((p) => {
-                            return p.clothType.toLowerCase() === pData.clothType.toLowerCase();
+                            return (p.clothType.toLowerCase()) === (pData.clothType.toLowerCase());
                         })
                         .map((product) => {
                             return (
